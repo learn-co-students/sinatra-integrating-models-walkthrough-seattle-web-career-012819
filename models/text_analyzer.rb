@@ -23,7 +23,7 @@ class TextAnalyzer
     s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
     arr = s1.split('')
     most = arr.max_by{|letter| arr.count(letter)}
-    {most => arr.count(most)}
+    "#{most.capitalize}, used  #{arr.count(most)} times."
     # arr1 = arr.uniq
     # arr2 = {}
     #
